@@ -60,7 +60,7 @@
         margin: 12px;
 
         @include respond(mobile){
-            margin: 1px 1px 0px 0px;
+            margin: 10px 10px 0px 0px;
         }
         @include respond(small-mobile){
             margin-top: 10px;
@@ -77,8 +77,8 @@
                 width: 60px;
             }
              @include respond(mobile){
-                height: 60px;
-                width: 60px;
+                height: 50px;
+                width: 50px;
             }
              @include respond(small-mobile){
                 height: 40px;
