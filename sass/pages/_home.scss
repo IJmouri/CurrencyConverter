@@ -1,0 +1,81 @@
+.section-converter {
+    height: calc(100vh - 170px);
+
+    @include respond(tab-port) {
+
+        height: calc(110vh - 130px);
+        margin: 10px 20px 10px 20px;
+    }
+
+    @include respond(mobile) {
+
+        height: calc(100vh - 140px);
+        margin: 10px 20px 10px 20px;
+
+    }
+
+    margin: 10px 40px 10px 40px;
+
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom,
+        rgba(#ff7730, 0.8), rgba(#ffb900, 0.8)),
+    url(../img/bc.jpg);
+    // background-image: linear-gradient(to right bottom,
+    //     rgba(#08102b, 0.8), rgba(#487eb5, 0.8)),
+    // url(../img/images.jpg);
+    background-size: cover;
+    background-blend-mode: color;
+
+    // position: relative;
+}
+
+.heading {
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    position: absolute;
+    margin-top: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(tab-land) {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    @include respond(tab-port) {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    @include respond(mobile) {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+}
+
+.section-footer {
+    height: 30px;
+    margin: 10px 40px 10px 40px;
+
+    @include respond(tab-port){
+        margin: 10px 20px 10px 20px;
+    }
+    @include respond(mobile) {
+        margin: 10px 20px 10px 20px;
+    }
+
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, #ff7730, #ffb900);
+}
+
+//  rgba(8, 43, 43 , 0.8), rgba(38, 83, 83 , 0.8)), url(../img/images.jpg);

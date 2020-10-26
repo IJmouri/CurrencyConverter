@@ -1,0 +1,44 @@
+.row{
+    width: 80%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1000 !important;
+
+    @include respond(tab-port) {
+        width: 100%;
+        top: 35%;
+    }
+    @include respond(mobile) {
+        width: 120%;
+        top: 38%
+    }
+    @include respond(small-mobile) {
+        width: 180%;
+        top: 38%;
+    }
+    
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    [class^="col-"]{
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+    @include clearfix;    
+    .col-1-of-3{
+        width: calc((100% - 2 * #{$gutter-horizontal} )/ 3);
+    
+        @include respond(tab-port) {
+            width: 100%;
+        } 
+        @include respond(mobile) {
+            width: 100%;
+        }
+    }
+}

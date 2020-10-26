@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyConverter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="header__text-box_heading">Currency Converter</h1>
+        </div>
+
+        <div class="header__logo-box">
+            <img src="img/unnamed.png" alt="logo" class="header__logo-box_logo" />
+        </div>
+
+    </header>
+
+    <section class="section-converter">
+        <h1 class="heading">Choose the currency and the amounts to get the exchange rate</h1>
+        
+        <div id="select">
+            <div class="row">
+                <div class="col-1-of-3">
+
+                    <h3 class="text">From</h3>
+                    <select id="select-from-currency" class="select-currency">
+                        <option value="USD" >USD </option>
+                        <option value="AED">AED</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                    </select>
+                </div>
+
+               
+
+                <div class="col-1-of-3">
+                    <h3 class="text">To</h3>
+                    
+                    <select id="select-to-currency" class="select-currency">
+                        
+                        <option value="AED">AED</option>
+                        <option value="USD">USD</option>
+                        <option value="ARS">ARS</option>
+                        <option value="AUD">AUD</option>
+                        <option value="BGN">BGN</option>
+                    </select>
+
+                </div>
+
+                <div class="col-1-of-3">
+                    <h3 class="text">Input</h3>
+
+                    <input type="number" id="from-currency-input" class="select-currency" value="1" min="1">
+
+                </div>
+            </div>
+
+            <div class="convert">
+                <span class="from-currency-text-input"></span>
+                <span class="from-currency-text"></span>
+                <span class="equal">=</span>
+            </div>
+
+            <div class="converted-value">
+                <span id="to-currency-value"></span>
+                <span class="to-currency-text"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-footer">
+        <div class="copyright">
+            <h3 class="copyright-text">&copy; 2020 Currency converter. all rights reserved</h3>
+        </div>
+    </section>
+
+
+    <script src="js/init.js"></script>
+</body>
+
+</html>
