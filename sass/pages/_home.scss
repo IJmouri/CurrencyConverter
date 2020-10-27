@@ -18,9 +18,10 @@
 
     border-radius: 5px;
     background-image: linear-gradient(to right bottom,
-        rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
-    url(../img/bc.jpg);
+    rgba($color-primary-dark, 0.8), rgba($color-primary-light, 0.8)),
+    url(../img/bac.jpg);
     background-size: cover;
+    background-position: center;
     background-blend-mode: color;
 }
 
@@ -68,7 +69,7 @@
     @include respond(mobile) {
         margin: 10px 20px 10px 20px;
     }
-
+    background-blend-mode: color;
     border-radius: 5px;
     background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
 }

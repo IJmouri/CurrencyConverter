@@ -4,6 +4,8 @@
     border-radius: 5px;
     background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
     height: 100px;
+    
+    background-blend-mode: color;
 
     @include respond(tab-port) {
         margin: 10px 20px 10px 20px;

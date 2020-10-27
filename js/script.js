@@ -1,12 +1,12 @@
 // variables
 
-let selectFromCurrency = document.getElementById('select-from-currency');
-let selectToCurrency = document.getElementById('select-to-currency');
-let fromCurrencyInput = document.querySelector('#from-currency-input');
-let toCurrencyValueShow = document.querySelector('#to-currency-value');
-let fromCurrencyTextInput = document.querySelector('.from-currency-text-input');
-let fromCurrencyText = document.querySelector('.from-currency-text');
-let toCurrencyText = document.querySelector('.to-currency-text');
+const selectFromCurrency = document.getElementById('select-from-currency');
+const selectToCurrency = document.getElementById('select-to-currency');
+const fromCurrencyInput = document.querySelector('#from-currency-input');
+const toCurrencyValueShow = document.querySelector('#to-currency-value');
+const fromCurrencyTextInput = document.querySelector('.from-currency-text-input');
+const fromCurrencyText = document.querySelector('.from-currency-text');
+const toCurrencyText = document.querySelector('.to-currency-text');
 
 // event listeners
 
@@ -17,7 +17,7 @@ selectToCurrency.addEventListener('change', calculateCurrency);
 
 function showFromSelectList(){
     
-    $('#select-from-currency').ddslick({
+    $(selectFromCurrency).ddslick({
         width:'100%',
         maxHeight: "300px",
         imagePosition: 'left',
@@ -30,7 +30,7 @@ function showFromSelectList(){
 }
 function showToSelectList(){
     
-    $('#select-to-currency').ddslick({
+    $(selectToCurrency).ddslick({
         width:'100%',
         imagePosition: 'left',
         maxHeight: "300px",
@@ -56,9 +56,9 @@ function calculateCurrency() {
     request.onreadystatechange = function handleRequest() {
         if (request.readyState === 4 && request.status === 200) {
 
-            let data = JSON.parse(request.responseText);
-            let selectToCurrencyValue = selectToCurrency.value;
-            let rate = data.rates[selectToCurrencyValue];
+            const data = JSON.parse(request.responseText);
+            const selectToCurrencyValue = selectToCurrency.value;
+            const rate = data.rates[selectToCurrencyValue];
 
             toCurrencyValueShow.innerHTML =  (fromCurrencyInput.value * rate ).toFixed(2);
             fromCurrencyTextInput.innerHTML = fromCurrencyInput.value;
