@@ -3,8 +3,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    
     &-text{
-        color: white;
+        color: $color-text;
         @include respond(tab-port){
             font-size: 10px;
         }

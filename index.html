@@ -11,6 +11,7 @@
 
 <body>
     <header class="header">
+
         <div class="header__text-box">
             <h1 class="header__text-box_heading">Currency Converter</h1>
         </div>
@@ -30,29 +31,38 @@
 
                     <h3 class="text">From</h3>
                     <select id="select-from-currency" class="select-currency" >
-
+                        
+                        <option value="CAD"  data-imagesrc="img/cad.webp" data-description="Canadian Dollar">CAD</option>
+                        <option value="EUR"  data-imagesrc="img/eur.jpg" data-description="Euro">EUR</option>
+                        <option value="TRY"  data-imagesrc="img/try.png" data-description="Turkish Lira">TRY</option>
                         <option value="GBP"  data-imagesrc="img/gbp.svg" data-description="British Pound">GBP</option>                       
                         <option value="AUD"  data-imagesrc="img/aud.png" data-description="Australian Dollar">AUD</option>
                         <option value="AED"  data-imagesrc="img/aed.jpg" data-description="Emirati Dirham">AED</option>
                         <option value="USD"  data-imagesrc="img/usd.png" data-description="US Dollar">USD </option>
-                        <option value="EUR"  data-imagesrc="img/eur.jpg" data-description="Euro">EUR</option>
+                        <option value="UAH"  data-imagesrc="img/inr.svg" data-description="Indian Rupee">INR</option>
+                        <option value="TWD"  data-imagesrc="img/twd.jpg" data-description="Taiwan Dollar">TWD</option>
+                        <option value="BSD"  data-imagesrc="img/bsd.svg" data-description="Bahamian Dollar">BSD</option>
 
                     </select>
-                </div>
 
-               
+                </div>
 
                 <div class="col-1-of-3">
                     <h3 class="text">To</h3>
                     
                     <select id="select-to-currency" class="select-currency">
 
+                        <option value="TRY"  data-imagesrc="img/try.png" data-description="Turkish Lira">TRY</option>
                         <option value="EUR"  data-imagesrc="img/eur.jpg" data-description="Euro">EUR</option>                        
                         <option value="AUD"  data-imagesrc="img/aud.png" data-description="Australian Dollar">AUD</option>
                         <option value="AED"  data-imagesrc="img/aed.jpg" data-description="Emirati Dirham">AED</option>
                         <option value="USD"  data-imagesrc="img/usd.png" data-description="US Dollar">USD </option>
                         <option value="GBP"  data-imagesrc="img/gbp.svg" data-description="British Pound">GBP</option>
-                    
+                        <option value="UAH"  data-imagesrc="img/inr.svg" data-description="Indian Rupee">INR</option>
+                        <option value="TWD"  data-imagesrc="img/twd.jpg" data-description="Taiwan Dollar">TWD</option>
+                        <option value="BSD"  data-imagesrc="img/bsd.svg" data-description="Bahamian Dollar">BSD</option>
+                        <option value="CAD"  data-imagesrc="img/cad.webp" data-description="Canadian Dollar">CAD</option>
+
                     </select>
 
                 </div>
@@ -63,6 +73,7 @@
                     <input type="number" id="from-currency-input" class="select-currency" value="1" min="1">
 
                 </div>
+
             </div>
 
             <div class="convert">
@@ -87,10 +98,9 @@
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script> -->
-
     <script src="js/ddslick.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 
 </html>

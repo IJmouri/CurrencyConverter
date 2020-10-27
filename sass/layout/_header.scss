@@ -2,18 +2,10 @@
     margin: 10px 40px 10px 40px;
 
     border-radius: 5px;
-    // background-image: linear-gradient(to left, rgb(38, 83, 83), rgb(8, 43, 43));
-      background-image: linear-gradient(to right bottom,#ff7730, #ffb900);
-    //   background-image: linear-gradient(to left bottom, #08102b, #487eb5);
-
-    // background-image: linear-gradient(to right bottom,
-    //         rgba(darkblue, 0.8),
-    //         rgba(teal, 0.8));
-    // background-color: blue;
-
+    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light);
     height: 100px;
-    
-    @include respond(tab-port){
+
+    @include respond(tab-port) {
         margin: 10px 20px 10px 20px;
         height: 80px;
     }
@@ -28,11 +20,12 @@
         float: left;
         margin-left: 30px;
         margin-top: 20px;
+
         @include respond(tab-port) {
             margin-left: 15px;
         }
 
-        @include respond(mobile){
+        @include respond(mobile) {
             margin-left: 10px;
         }
 
@@ -45,10 +38,12 @@
 
             @include respond(tab-port) {
                 font-size: 24px;
-            } 
+            }
+
             @include respond(mobile) {
                 font-size: 16px;
             }
+
             @include respond (small-mobile) {
                 font-size: 10px;
             }
@@ -59,10 +54,11 @@
         float: right;
         margin: 12px;
 
-        @include respond(mobile){
+        @include respond(mobile) {
             margin: 10px 10px 0px 0px;
         }
-        @include respond(small-mobile){
+
+        @include respond(small-mobile) {
             margin-top: 10px;
 
         }
@@ -72,15 +68,17 @@
             width: 80px;
 
 
-            @include respond(tab-port){
+            @include respond(tab-port) {
                 height: 60px;
                 width: 60px;
             }
-             @include respond(mobile){
+
+            @include respond(mobile) {
                 height: 50px;
                 width: 50px;
             }
-             @include respond(small-mobile){
+
+            @include respond(small-mobile) {
                 height: 40px;
                 width: 40px;
             }
