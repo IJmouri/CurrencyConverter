@@ -3,7 +3,7 @@
 
     @include respond(tab-port) {
 
-        height: calc(110vh - 130px);
+        height: calc(100vh - 140px);
         margin: 10px 20px 10px 20px;
     }
 
@@ -29,28 +29,28 @@
     transform: translateX(-50%);
     color: $color-text;
     position: absolute;
-    margin-top: 50px;
-    font-size: 12px;
+    margin-top: 40px;
+    font-size: 14px;
     text-transform: uppercase;
+    text-align: center;
+
 
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
     @include respond(tab-land) {
-        font-size: 16px;
-        text-align: center;
         margin-top: 30px;
     }
 
     @include respond(tab-port) {
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     @include respond(mobile) {
-        font-size: 10px;
+        font-size: 8px;
         text-align: center;
         margin-top: 10px;
     }

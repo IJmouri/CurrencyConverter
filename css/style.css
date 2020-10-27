@@ -115,7 +115,7 @@ body {
   background-blend-mode: color; }
   @media (min-width: 488px) and (max-width: 767px) {
     .section-converter {
-      height: calc(110vh - 130px);
+      height: calc(100vh - 140px);
       margin: 10px 20px 10px 20px; } }
   @media (max-width: 487px) {
     .section-converter {
@@ -127,25 +127,24 @@ body {
   transform: translateX(-50%);
   color: white;
   position: absolute;
-  margin-top: 50px;
-  font-size: 12px;
+  margin-top: 40px;
+  font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .heading {
-      font-size: 16px;
-      text-align: center;
       margin-top: 30px; } }
   @media (min-width: 488px) and (max-width: 767px) {
     .heading {
-      font-size: 12px;
+      font-size: 10px;
       text-align: center;
-      margin-top: 40px; } }
+      margin-top: 10px; } }
   @media (max-width: 487px) {
     .heading {
-      font-size: 10px;
+      font-size: 8px;
       text-align: center;
       margin-top: 10px; } }
 
@@ -196,10 +195,10 @@ body {
   z-index: 9; }
   @media (min-width: 488px) and (max-width: 767px) {
     .convert {
-      top: 70%; } }
+      top: 82%; } }
   @media (max-width: 487px) {
     .convert {
-      top: 75%; } }
+      top: 82%; } }
 
 .converted-value {
   text-align: center;
@@ -210,19 +209,21 @@ body {
   transform: translateX(-50%); }
   @media (min-width: 488px) and (max-width: 767px) {
     .converted-value {
-      top: 80%;
+      top: 90%;
       left: 0;
       transform: translateX(0); } }
   @media (max-width: 487px) {
     .converted-value {
-      top: 85%; } }
+      top: 90%;
+      left: 0;
+      transform: translateX(0); } }
 
 .from-currency-text-input {
   color: white;
   font-size: 24px; }
   @media (min-width: 488px) and (max-width: 767px) {
     .from-currency-text-input {
-      font-size: 12px; } }
+      font-size: 14px; } }
   @media (max-width: 487px) {
     .from-currency-text-input {
       font-size: 10px; } }
@@ -235,7 +236,7 @@ body {
   font-size: 24px; }
   @media (min-width: 488px) and (max-width: 767px) {
     .from-currency-text {
-      font-size: 12px;
+      font-size: 14px;
       margin-left: 5px;
       margin-right: 5px; } }
   @media (max-width: 487px) {
@@ -251,7 +252,7 @@ body {
       font-size: 10rem; } }
   @media (min-width: 488px) and (max-width: 767px) {
     #to-currency-value {
-      font-size: 6rem; } }
+      font-size: 42px; } }
   @media (max-width: 487px) {
     #to-currency-value {
       font-size: 24px; } }
@@ -263,7 +264,7 @@ body {
   text-transform: uppercase; }
   @media (min-width: 488px) and (max-width: 767px) {
     .to-currency-text {
-      font-size: 12px; } }
+      font-size: 14px; } }
   @media (max-width: 487px) {
     .to-currency-text {
       font-size: 8px; } }
@@ -273,7 +274,7 @@ body {
   font-size: 24px; }
   @media (min-width: 488px) and (max-width: 767px) {
     .equal {
-      font-size: 12px; } }
+      font-size: 14px; } }
   @media (max-width: 487px) {
     .equal {
       font-size: 10px; } }
@@ -285,14 +286,17 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   z-index: 1000 !important; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .row {
+      width: 100%; } }
   @media (min-width: 488px) and (max-width: 767px) {
     .row {
       width: 100%;
-      top: 35%; } }
+      top: 42%; } }
   @media (max-width: 487px) {
     .row {
       width: 120%;
-      top: 38%; } }
+      top: 42%; } }
   @media (max-width: 302px) {
     .row {
       width: 180%;
@@ -308,7 +312,7 @@ body {
     display: table;
     clear: both; }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 2rem )/ 3); }
+    width: calc((100% - 2 * 2rem)/ 3); }
     @media (min-width: 488px) and (max-width: 767px) {
       .row .col-1-of-3 {
         width: 100%; } }
